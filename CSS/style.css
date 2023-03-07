@@ -1,0 +1,81 @@
+/* GENERAL */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Rubik Iso', cursive;
+  background: url(../asset/header-img.jpg) no-repeat center fixed;
+  min-width: 100%;
+  min-height: 100%;
+  color: aliceblue;
+}
+
+.btn{ 
+  color: aliceblue;
+}
+
+.gamepad{
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+    background: lightgray;
+}
+
+
+/* HEADER */
+
+
+/* MAIN */
+section{
+  margin: 15% 5%;
+}
+
+section .card{
+  margin-bottom: 1rem;
+}
+
+section .card img{
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+@media screen and (min-width: 992px){
+
+  section{
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid white;
+    border-top-left-radius: 1%;
+    border-top-right-radius: 1%;
+    width: 70%;
+  }
+
+  section .card-top{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  section .card-top .card-1{
+    width: 50%;
+    margin: 1%;
+  }
+
+  section .card-bottom{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  section .card-bottom .card-3{
+    width: 99%;
+    margin-top: 1%;
+    text-align: center;
+  }
+
+}
