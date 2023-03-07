@@ -1,0 +1,60 @@
+/* GENERAL */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: url(../asset/header-img.jpg) no-repeat center fixed;
+  min-width: 100%;
+  min-height: 100%;
+  color: aliceblue;
+}
+
+
+.btn{ 
+  color: aliceblue;
+}
+
+h3{
+  font-family: 'Rubik Iso', cursive;
+}
+
+/* MAIN Mobile */
+section{
+  margin: 20% 5%;
+}
+
+section .card{
+  margin-bottom: 1rem;
+  border: 2px solid white;
+  border-top-left-radius: 1%;
+  border-top-right-radius: 1%;
+}
+
+.footer-content{
+  text-align: center;
+  margin-top: -10px;
+}
+
+.footer-content i{
+  margin: 20px;
+}
+
+@media screen and (min-width: 992px){
+
+  section{
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+  }
+
+  section .card{
+    display: flex;
+    width: 30%;
+    margin: 10px;
+  }
+}

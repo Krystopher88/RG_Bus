@@ -6,12 +6,12 @@
 }
 
 body{
-  font-family: 'Rubik Iso', cursive;
   background: url(../asset/header-img.jpg) no-repeat center fixed;
   min-width: 100%;
   min-height: 100%;
   color: aliceblue;
 }
+
 
 .btn{ 
   color: aliceblue;
@@ -24,23 +24,38 @@ body{
     background: lightgray;
 }
 
+h3{
+  font-family: 'Rubik Iso', cursive;
+}
 
-/* HEADER */
-
-
-/* MAIN */
+/* MAIN mobile */
 section{
-  margin: 15% 5%;
+  margin: 20% 5%;
+  
 }
 
 section .card{
   margin-bottom: 1rem;
+  border: 2px solid white;
+  border-top-left-radius: 1%;
+  border-top-right-radius: 1%;
 }
 
 section .card img{
   border: 1px solid;
   border-radius: 50%;
 }
+
+.footer-content{
+  text-align: center;
+  margin-top: -10px;
+}
+
+.footer-content i{
+  margin: 20px;
+}
+
+/*RESPONSIVE Dekstop*/
 
 @media screen and (min-width: 992px){
 
@@ -77,5 +92,12 @@ section .card img{
     margin-top: 1%;
     text-align: center;
   }
+
+  .footer-content{
+    margin-top: 5px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+
 
 }
