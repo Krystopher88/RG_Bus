@@ -3,13 +3,15 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body{
   background: url(../asset/header-img.jpg) no-repeat center fixed;
   min-width: 100%;
   min-height: 100%;
-  color: aliceblue;
+  background-color: #000;
+  color: aliceblue; 
 }
 
 
@@ -28,10 +30,11 @@ h3{
   font-family: 'Rubik Iso', cursive;
 }
 
+/* HEADER */
+
 /* MAIN mobile */
 section{
   margin: 20% 5%;
-  
 }
 
 section .card{
@@ -41,11 +44,13 @@ section .card{
   border-top-right-radius: 1%;
 }
 
-section .card img{
+section .card .gamepad{
   border: 1px solid;
   border-radius: 50%;
 }
 
+
+/* FOOTER */
 .footer-content{
   text-align: center;
   margin-top: -10px;

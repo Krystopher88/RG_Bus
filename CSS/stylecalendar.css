@@ -3,6 +3,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body{
@@ -21,6 +22,11 @@ h3{
   font-family: 'Rubik Iso', cursive;
 }
 
+/* end GENERAL */
+
+
+
+
 /* MAIN Mobile */
 section{
   margin: 20% 5%;
@@ -33,6 +39,18 @@ section .card{
   border-top-right-radius: 1%;
 }
 
+.card-img-top{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+.ico-card-btn{
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
 .footer-content{
   text-align: center;
   margin-top: -10px;
@@ -42,6 +60,7 @@ section .card{
   margin: 20px;
 }
 
+/* responsive dekstop */
 @media screen and (min-width: 992px){
 
   section{
@@ -55,6 +74,17 @@ section .card{
   section .card{
     display: flex;
     width: 30%;
+    height: auto;
     margin: 10px;
   }
+
+  .footer-content{
+    margin-top: 5px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+  }
+
 }
+
+
+

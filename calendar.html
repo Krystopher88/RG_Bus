@@ -16,12 +16,12 @@
 
 <body>
   <header>
+    <!--Menu bootstrap responsive-->
     <div>
-      <!--<img class="header-img" src="./asset/header-img.jpg" alt="">-->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
         <div class="container-fluid">
           <a href="#" class="navbar-brand">
-            <i class="bi bi-bus-front-fill h1"></i>
+            <i class="bi bi-joystick h1"></i>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
             <span class="navbar-toggler-icon"></span><!--Remplacer icone hamburger par l'icone bus, 
@@ -32,119 +32,160 @@
               <li class="navbar-item"><a href="./index.html" class="nav-link">Accueil</a></li>
               <li class="navbar-item"><a href="./calendar.html" class="nav-link active">Calendrier</a></li>
               <li class="navbar-item"><a href="" class="nav-link" data-bs-toggle="modal"
-                data-bs-target="#contact">Contact</a></li>
+                  data-bs-target="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
-    <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- modal de contact -->
+    <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="modal" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
+        <div class="modal-content bg-dark">
           <div class="modal-header">
-            <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <h1 class="modal-title fs-5" id="modal">Contactez-nous !</h1>
+            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            ...
+            <!--formulaire de contact-->
+            <div class="mb-3">
+              <label for="formControlMail" class="form-label">Votre adresse mail</label>
+              <input type="email" class="form-control" id="formControlMail" placeholder="*****@*****.***">
+            </div>
+            <div class="mb-3">
+              <label for="formControlTextarea" class="form-label">Votre Message</label>
+              <textarea class="form-control" id="formControlTextarea" rows="3" placeholder="Blablabla"></textarea>
+            </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Envoyer</button>
           </div>
         </div>
       </div>
     </div>
   </header>
-
   <main>
     <div class="container-fluid">
       <section>
-
-          <div class="card bg-dark">
-            <img class="" src="" alt="">
-            <div class="card-body">
-              <h3 class="card-title">Titre 1</h3>
-              <p class="car-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos, accusantium,
-                officia
-                laboriosam assumenda nam reprehenderit velit pariatur in magni quibusdam quo fugiat neque dolor maiores
-                blanditiis voluptatem illum alias!</p>
-              <a href="#" class="btn btn-outline-secondary">Inscription</a>
-            </div>
+        <div class="card bg-dark">
+          <img class="card-img-top" src="./asset/nintendo-games-console-svgrepo-com.svg" alt="">
+          <div class="card-body">
+            <h3 class="card-title">A la rencontre de Nintendo</h3>
+            <p class="card-text">Venez Re-decrouvir les jeux Nintendo de votre enfance.<br>
+              GameBoy, Nintendo, Super Nintendo, Nintendo 64, ce qui vous attend !!! !!!
+            </p>
           </div>
-          <div class="card bg-dark">
-            <img class="" src="" alt="">
-            <div class="card-body ">
-              <h3 class="card-title">Titre 1</h3>
-              <p class="car-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos, accusantium,
-                officia
-                laboriosam assumenda nam reprehenderit velit pariatur in magni quibusdam quo fugiat neque dolor maiores
-                blanditiis voluptatem illum alias!</p>
-              <a href="#" class="btn btn-outline-secondary">Inscription</a>
-            </div>
+          <div class="card-footer m-2">
+            <a href="#" class="btn btn-outline-secondary" data-bs-toggle="modal"
+            data-bs-target="#inscription">Inscription<img class="ico-card-btn"
+                src="./asset/icons8-super-mario-50.svg"></a>
           </div>
-
-          <div class="card bg-dark">
-            <img class="" src="" alt="">
-            <div class="card-body">
-              <h3 class="card-title">Titre 1</h3>
-              <p class="car-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos, accusantium,
-                officia
-                laboriosam assumenda nam reprehenderit velit pariatur in magni quibusdam quo fugiat neque dolor maiores
-                blanditiis voluptatem illum alias!</p>
-              <a href="#" class="btn btn-outline-secondary">Inscription</a>
-            </div>
+        </div>
+        <div class="card bg-dark">
+          <img class="card-img-top" src="./asset/Sega-Logo.wine.svg" alt="">
+          <div class="card-body">
+            <h3 class="card-title">A la rencontre de Sega</h3>
+            <p class="card-text">Venez Re-decrouvir les jeux Sega de votre enfance.<br>
+              MasterSystem, GameGear, Megadrive, Dreamcast, ce qui vous attend !!! !!!
+            </p>
           </div>
-          <div class="card bg-dark">
-            <img class="" src="" alt="">
-            <div class="card-body">
-              <h3 class="card-title">Titre 1</h3>
-              <p class="car-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos, accusantium,
-                officia
-                laboriosam assumenda nam reprehenderit velit pariatur in magni quibusdam quo fugiat neque dolor maiores
-                blanditiis voluptatem illum alias!</p>
-              <a href="#" class="btn btn-outline-secondary">Inscription</a>
-            </div>
+          <div class="card-footer m-2">
+            <a href="#" class="btn btn-outline-secondary ">Inscription<img class="ico-card-btn"
+                src="./asset/sonic.svg"></a>
           </div>
-          <div class="card bg-dark">
-            <img class="" src="" alt="">
-            <div class="card-body">
-              <h3 class="card-title">Titre 1</h3>
-              <p class="car-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos, accusantium,
-                officia
-                laboriosam assumenda nam reprehenderit velit pariatur in magni quibusdam quo fugiat neque dolor maiores
-                blanditiis voluptatem illum alias!</p>
-              <a href="#" class="btn btn-outline-secondary">Inscription</a>
-            </div>
+        </div>
+        <div class="card bg-dark">
+          <img class="card-img-top" src="./asset/cinema.svg" alt="">
+          <div class="card-body">
+            <h3 class="card-title">Journée découvrte Dessin animé Nintendo</h3>
+            <p class="car-text">Venez savourez une aprés-midi vidéo.<br>
+              Au programmes: Quelques episodes des dessins animés "Super Mario Bros"(1989) et "Princesse Zelda" (1989)
+              !!! !!!
+            </p>
           </div>
-          <div class="card bg-dark">
-            <img class="" src="" alt="">
-            <div class="card-body">
-              <h3 class="card-title">Titre 1</h3>
-              <p class="car-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos, accusantium,
-                officia
-                laboriosam assumenda nam reprehenderit velit pariatur in magni quibusdam quo fugiat neque dolor maiores
-                blanditiis voluptatem illum alias!</p>
-              <a href="#" class="btn btn-outline-secondary">Inscription</a>
-            </div>
+          <div class="card-footer m-2">
+            <a href="#" class="btn btn-outline-secondary">Inscription<img class="ico-card-btn"
+                src="./asset/zelda.svg"></a>
           </div>
+        </div>
+        <div class="card bg-dark">
+          <img class="card-img-top" src="./asset/dolphin.svg" alt="">
+          <div class="card-body">
+            <h3 class="card-title">Journée Flipper</h3>
+            <p class="card-text">Nous laisserons Flipper, tranquillement faire trempette. Nous irons plutots faire
+              quelques Back Flip, bumper..., Bref toucher de la billes !!! !!!</p>
+          </div>
+          <div class="card-footer m-2">
+            <a href="#" class="btn btn-outline-secondary">Inscription<img class="ico-card-btn"
+                src="./asset/pinball-flipper.svg"></a>
+          </div>
+        </div>
+        <div class="card bg-dark">
+          <img class="card-img-top" src="./asset/sleeping.svg" alt="">
+          <div class="card-body">
+            <h3 class="card-title">A venir</h3>
+            <p class="card-text">Manque d'inspiration !!! !!!</p>
+          </div>
+          <div class="card-footer m-2">
+            <a href="#" class="btn btn-outline-secondary">Inscription<img class="ico-card-btn" src="./asset/sleeping.svg"></a>
+          </div>
+        </div>
+        <div class="card bg-dark">
+          <img class="card-img-top" src="./asset/sleeping.svg" alt="">
+          <div class="card-body">
+            <h3 class="card-title">A venir</h3>
+            <p class="card-text">Manque d'inspiration !!! !!!</p>
+          </div>
+          <div class="card-footer m-2">
+            <a href="#" class="btn btn-outline-secondary">Inscription<img class="ico-card-btn" src="./asset/sleeping.svg"></a>
+          </div>
+        </div>
       </section>
     </div>
+    <!--modal de d'inscription-->
+    <div class="modal fade" id="inscription" tabindex="-1" aria-labelledby="modal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="modal-inscription">On vous attend !!! !!!</h1>
+            <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!--formulaire de contact-->
+            <div class="mb-3">
+              <label for="formControlMailInscription" class="form-label">Votre adresse mail</label>
+              <input type="email" class="form-control" id="formControlMailInscription" placeholder="*****@*****.***">
+            </div>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="name" placeholder="Nom">
+            </div>
+            <div class="mb-3">
+              <label for="firstName" class="form-label">Prénom</label>
+              <input type="text" class="form-control" id="firstName" placeholder="Prénom">
+            </div>
+            <div class="mb-3">
+              <label for="birthday" class="form-label">Date de naissance</label>
+              <input type="date" class="form-control" id="birthday" placeholder="">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Confirmer mon inscription</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
-
   <footer>
     <div class="footer-content">
-    <div class="ico-sociaux">
-      <i class="bi bi-facebook h1 "></i>
-      <i class="bi bi-instagram h1 "></i>
-      <i class="bi bi-twitter h1 "></i>
+      <div class="ico-sociaux">
+        <i class="bi bi-facebook h1 "></i>
+        <i class="bi bi-instagram h1 "></i>
+        <i class="bi bi-twitter h1 "></i>
+      </div>
     </div>
-  </div>
-
   </footer>
-
   <script src="./script/bootstrap.bundle.min.js"></script>
 </body>
-
 
 </html>
