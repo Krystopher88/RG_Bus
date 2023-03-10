@@ -14,11 +14,14 @@ body{
   color: aliceblue; 
 }
 
+h3{
+  font-family: 'Rubik Iso';
+}
 
 .btn{ 
   color: aliceblue;
 }
-
+/* unique à index.html */
 .gamepad{
     width: 30%;
     margin: auto;
@@ -26,13 +29,13 @@ body{
     background: lightgray;
 }
 
-h3{
-  font-family: 'Rubik Iso', cursive;
-}
+/* fin unique à index.html */
 
-/* HEADER */
 
-/* MAIN mobile */
+
+
+/* FIRST MOBILE */
+
 section{
   margin: 20% 5%;
 }
@@ -44,11 +47,27 @@ section .card{
   border-top-right-radius: 1%;
 }
 
+/* UNIQUE A INDEX.HTML */
 section .card .gamepad{
   border: 1px solid;
   border-radius: 50%;
 }
+/* FIN UNIQUE A INDEX.HTML */
 
+/* UNIQUE A CALENDAR.HTML */
+
+.card-img-top{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+
+.ico-card-btn{
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+/* FIN UNIQUE A CALENDAR.HTML */
 
 /* FOOTER */
 .footer-content{
@@ -59,22 +78,38 @@ section .card .gamepad{
 .footer-content i{
   margin: 20px;
 }
+/* FIN FOOTER */
 
 /*RESPONSIVE Dekstop*/
 
 @media screen and (min-width: 992px){
-
+  /* SECTION COMMUN */
   section{
     margin: auto;
     margin-top: 80px;
     display: flex;
     flex-wrap: wrap;
+    width: 60%;
+  }
+
+/* BORDURE UNIQUE POUR INDEX.HTML */
+  .indexsection{
     border: 2px solid white;
     border-top-left-radius: 1%;
     border-top-right-radius: 1%;
-    width: 70%;
   }
+/* FIN BORDURE UNIQUE POUR INDEX.HTML */
 
+/* CARD CALENDAR.HTML */
+  section .card-calendar{
+    display: flex;
+    width: 30%;
+    height: auto;
+    margin: 10px;
+  }
+/* FIN CARD CALENDAR.HTML */
+
+/* CARD INDEX.HTML */
   section .card-top{
     display: flex;
     justify-content: center;
@@ -98,11 +133,15 @@ section .card .gamepad{
     text-align: center;
   }
 
+/* FIN CARD INDEX.HTML */
+
+/* FOOTER COMMUN */
+
   .footer-content{
     margin-top: 5px;
     padding-bottom: 10px;
     padding-top: 20px;
   }
-
-
+/* FIN FOOTER COMMUN */
 }
+/*FIN RESPONSIVE Dekstop*/

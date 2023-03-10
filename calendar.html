@@ -5,12 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="./CSS/bootstrap.min.css">
-  <link rel="stylesheet" href="./CSS/stylecalendar.css">
+  <link rel="stylesheet" href="./CSS/style.css">
   <title>RetroGaming Bus</title>
 </head>
 
@@ -24,8 +21,7 @@
             <i class="bi bi-joystick h1"></i>
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
-            <span class="navbar-toggler-icon"></span><!--Remplacer icone hamburger par l'icone bus, 
-              et positionner sur la gauche-->
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="nav">
             <ul class="navbar-nav">
@@ -59,46 +55,47 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Envoyer</button>
-          </div>
+          </div><!--fin formulaire-->
         </div>
       </div>
     </div>
+    <!--Fin modal-->
   </header>
   <main>
     <div class="container-fluid">
       <section>
-        <div class="card bg-dark">
-          <img class="card-img-top" src="./asset/nintendo-games-console-svgrepo-com.svg" alt="">
+        <div class="card card-calendar bg-dark">
+          <img class="card-img-top" src="./asset/nintendo-games-console-svgrepo-com.svg" alt="Nintendo">
           <div class="card-body">
-            <h3 class="card-title">A la rencontre de Nintendo</h3>
+            <h3 class="card-title">A la rencontre de Nintendo,<br> le 12/04/2023.</h3>
             <p class="card-text">Venez Re-decrouvir les jeux Nintendo de votre enfance.<br>
               GameBoy, Nintendo, Super Nintendo, Nintendo 64, ce qui vous attend !!! !!!
             </p>
           </div>
           <div class="card-footer m-2">
             <a href="#" class="btn btn-outline-secondary" data-bs-toggle="modal"
-            data-bs-target="#inscription">Inscription<img class="ico-card-btn"
-                src="./asset/icons8-super-mario-50.svg"></a>
+              data-bs-target="#inscription">Inscription<img class="ico-card-btn" src="./asset/icons8-super-mario-50.svg"
+                alt="Mario"></a>
           </div>
         </div>
-        <div class="card bg-dark">
-          <img class="card-img-top" src="./asset/Sega-Logo.wine.svg" alt="">
+        <div class="card card-calendar bg-dark">
+          <img class="card-img-top" src="./asset/Sega-Logo.wine.svg" alt="Sega">
           <div class="card-body">
-            <h3 class="card-title">A la rencontre de Sega</h3>
+            <h3 class="card-title">A la rencontre de Sega,<br> le 03/05/2023.</h3>
             <p class="card-text">Venez Re-decrouvir les jeux Sega de votre enfance.<br>
               MasterSystem, GameGear, Megadrive, Dreamcast, ce qui vous attend !!! !!!
             </p>
           </div>
           <div class="card-footer m-2">
             <a href="#" class="btn btn-outline-secondary" data-bs-toggle="modal"
-            data-bs-target="#inscription">Inscription<img class="ico-card-btn"
-                src="./asset/sonic.svg"></a>
+              data-bs-target="#inscription">Inscription<img class="ico-card-btn" src="./asset/sonic.svg"
+                alt="Sonic"></a>
           </div>
         </div>
-        <div class="card bg-dark">
-          <img class="card-img-top" src="./asset/cinema.svg" alt="">
+        <div class="card card-calendar bg-dark">
+          <img class="card-img-top" src="./asset/cinema.svg" alt="Cinema">
           <div class="card-body">
-            <h3 class="card-title">Journée découvrte Dessin animé Nintendo</h3>
+            <h3 class="card-title">Journée découverte Dessin animé Nintendo,<br> le 07/06/2023.</h3>
             <p class="car-text">Venez savourez une aprés-midi vidéo.<br>
               Au programmes: Quelques episodes des dessins animés "Super Mario Bros"(1989) et "Princesse Zelda" (1989)
               !!! !!!
@@ -106,43 +103,45 @@
           </div>
           <div class="card-footer m-2">
             <a href="#" class="btn btn-outline-secondary" data-bs-toggle="modal"
-            data-bs-target="#inscription">Inscription<img class="ico-card-btn"
-                src="./asset/zelda.svg"></a>
+              data-bs-target="#inscription">Inscription<img class="ico-card-btn" src="./asset/zelda.svg"
+                alt="Zelda"></a>
           </div>
         </div>
-        <div class="card bg-dark">
-          <img class="card-img-top" src="./asset/dolphin.svg" alt="">
+        <div class="card card-calendar bg-dark">
+          <img class="card-img-top" src="./asset/dolphin.svg" alt="Flipper">
           <div class="card-body">
-            <h3 class="card-title">Journée Flipper</h3>
+            <h3 class="card-title">Journée Flipper,<br> le 05/07/2023.</h3>
             <p class="card-text">Nous laisserons Flipper, tranquillement faire trempette. Nous irons plutots faire
               quelques Back Flip, bumper..., Bref toucher de la billes !!! !!!</p>
           </div>
           <div class="card-footer m-2">
             <a href="#" class="btn btn-outline-secondary" data-bs-toggle="modal"
-            data-bs-target="#inscription">Inscription<img class="ico-card-btn"
-                src="./asset/pinball-flipper.svg"></a>
+              data-bs-target="#inscription">Inscription<img class="ico-card-btn" src="./asset/pinball-flipper.svg"
+                alt="Pinball"></a>
           </div>
         </div>
-        <div class="card bg-dark">
-          <img class="card-img-top" src="./asset/sleeping.svg" alt="">
+        <div class="card card-calendar bg-dark">
+          <img class="card-img-top" src="./asset/sleeping.svg" alt="Dodo">
           <div class="card-body">
             <h3 class="card-title">A venir</h3>
             <p class="card-text">Manque d'inspiration !!! !!!</p>
           </div>
           <div class="card-footer m-2">
             <a href="#" class="btn btn-outline-secondary" data-bs-toggle="modal"
-            data-bs-target="#inscription">Inscription<img class="ico-card-btn" src="./asset/sleeping.svg"></a>
+              data-bs-target="#inscription">Inscription<img class="ico-card-btn" src="./asset/sleeping.svg"
+                alt="Dodo"></a>
           </div>
         </div>
-        <div class="card bg-dark">
-          <img class="card-img-top" src="./asset/sleeping.svg" alt="">
+        <div class="card card-calendar bg-dark">
+          <img class="card-img-top" src="./asset/sleeping.svg" alt="Dodo">
           <div class="card-body">
             <h3 class="card-title">A venir</h3>
             <p class="card-text">Manque d'inspiration !!! !!!</p>
           </div>
           <div class="card-footer m-2">
             <a href="#" class="btn btn-outline-secondary" data-bs-toggle="modal"
-            data-bs-target="#inscription">Inscription<img class="ico-card-btn" src="./asset/sleeping.svg"></a>
+              data-bs-target="#inscription">Inscription<img class="ico-card-btn" src="./asset/sleeping.svg"
+                alt="Dodo"></a>
           </div>
         </div>
       </section>
@@ -171,24 +170,24 @@
             </div>
             <div class="mb-3">
               <label for="birthday" class="form-label">Date de naissance</label>
-              <input type="date" class="form-control" id="birthday" placeholder="">
+              <input type="date" class="form-control" id="birthday">
             </div>
             <p>Je viens pour :</p>
             <div class="mb-3">
               <input type="checkbox" id="nintendo" name="nintendo">
-              <label for="nintendo">Vivre Nintendo</label>
+              <label for="nintendo">Vivre Nintendo, le 12/04/2023.</label>
             </div>
             <div class="mb-3">
               <input type="checkbox" id="sega" name="sega">
-              <label for="sega">Vivre Sega</label>
+              <label for="sega">Vivre Sega, le 03/05/2023.</label>
             </div>
             <div class="mb-3">
               <input type="checkbox" id="cinema" name="cinema">
-              <label for="cinema">Les Pop-corn</label>
+              <label for="cinema">Les Pop-corn, le 07/06/2023.</label>
             </div>
             <div class="mb-3">
               <input type="checkbox" id="flipper" name="flipper">
-              <label for="flipper">Toucher de la bille</label>
+              <label for="flipper">Toucher de la bille, le 05/07/2023.</label>
             </div>
           </div>
           <div class="modal-footer">
@@ -201,9 +200,9 @@
   <footer>
     <div class="footer-content">
       <div class="ico-sociaux">
-        <i class="bi bi-facebook h1 "></i>
-        <i class="bi bi-instagram h1 "></i>
-        <i class="bi bi-twitter h1 "></i>
+        <i class="bi bi-facebook h1"></i>
+        <i class="bi bi-instagram h1"></i>
+        <i class="bi bi-twitter h1"></i>
       </div>
     </div>
   </footer>
